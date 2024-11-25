@@ -26,7 +26,12 @@
 
 #### Models Consideration
 * Predictions on what type of Model will perform better:
-** LR will do worse on unscaled data because features values range is too wide;
-** Random Forest (RF) being an ensemble-based learning algorithm should do better as it will form number of trees to get clearer model and weighs certain features more important than others.
+  - LR will do worse on unscaled data because features values range is too wide;
+  - Random Forest (RF) being an ensemble-based learning algorithm should do better as it will form number of trees to get clearer model and weighs certain features more important than others.
 * Logistic Regression, and Random Rorests classifier were created and fited to the data and scored.
-* Compared Model results on scaled Data (using StandardScaler). 
+  - LR scored 0.547.
+  - RF scored 0.644.
+  - As we predicted RF scored better than LR on unscaled data.
+* Compared Model results on scaled Data (using StandardScaler).
+  - LR perfromed better on scaled data as it was expected - 0.66 comparing to 0.575
+  - RF scored less on scaled data - 0.56 vs 0.648, so as expected it did not improve, but event went lower.
